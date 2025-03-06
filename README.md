@@ -35,5 +35,44 @@ Movie Search App Screenshot (https://i.postimg.cc/GtFj48tT/movie-search.png)
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/your-username/movie-search.git
+   git clone https://github.com/Emeka-Okpaleke/movie-search.git
    cd movie-search
+   
+2. **Install dependencies**
+   ```bash
+   npm install
+
+3. **Configure environment variables**
+   Create a `.env.local` file in the root directory:
+   ```bash
+   OMDB_API_KEY=your_api_key_here
+   
+5. **Run the development server**
+   ```bash
+   npm run dev
+
+## 🔑 Getting an OMDB API Key
+
+1. Visit [OMDB API Key Page](http://www.omdbapi.com/apikey.aspx)
+2. Select the FREE tier (1,000 daily limit)
+3. Fill in the form with your email and "Educational" as the purpose
+4. Check your email for the API key activation link
+5. Add the key to your `.env.local` file
+
+## 📱 Usage
+
+1. Type a movie title in the search box
+2. See real-time suggestions appear as you type
+3. Click on a suggestion or press Enter to search
+4. Browse through search results
+5. Click on a movie to view detailed information
+
+## 🙏 Acknowledgements
+
+- [OMDB API](http://www.omdbapi.com/) for providing the movie data  
+- [Next.js](https://nextjs.org/) for the amazing React framework  
+- [Tailwind CSS](https://tailwindcss.com/) for the utility-first CSS framework  
+- [shadcn/ui](https://ui.shadcn.com/) for the beautiful UI components
+
+Made by **Olisemeka Okpaleke**
+
