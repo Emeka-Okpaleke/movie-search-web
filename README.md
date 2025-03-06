@@ -2,7 +2,7 @@
 
 A modern, responsive web application built with Next.js that allows users to search for movies and view detailed information using the OMDB API. Features real-time search suggestions as you type and comprehensive movie details in an elegant UI.
 
-![Movie Search App Screenshot](https://via.placeholder.com/1200x630?text=Movie+Search+App)
+![Movie Search App Screenshot](https://i.postimg.cc/GtFj48tT/movie-search.png) 
 
 ## 🌟 Features
 
