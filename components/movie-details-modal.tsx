@@ -1,18 +1,28 @@
-"use client"
+"use client";
 
-import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from "@/components/ui/dialog"
-import { Badge } from "@/components/ui/badge"
-import { Star, Clock, Calendar, Film, Award } from "lucide-react"
-import type { MovieDetails } from "@/lib/types"
-import Image from "next/image"
+import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+  DialogDescription,
+} from "@/components/ui/dialog";
+import { Badge } from "@/components/ui/badge";
+import { Star, Clock, Calendar, Film, Award } from "lucide-react";
+import type { MovieDetails } from "@/lib/types";
+import Image from "next/image";
 
 interface MovieDetailsModalProps {
-  isOpen: boolean
-  onClose: () => void
-  movie: MovieDetails
+  isOpen: boolean;
+  onClose: () => void;
+  movie: MovieDetails;
 }
 
-export function MovieDetailsModal({ isOpen, onClose, movie }: MovieDetailsModalProps) {
+export function MovieDetailsModal({
+  isOpen,
+  onClose,
+  movie,
+}: MovieDetailsModalProps) {
   return (
     <Dialog open={isOpen} onOpenChange={onClose}>
       <DialogContent className="sm:max-w-[600px] max-h-[90vh] overflow-y-auto">
@@ -58,7 +68,8 @@ export function MovieDetailsModal({ isOpen, onClose, movie }: MovieDetailsModalP
               <div className="flex items-center gap-2">
                 <Star className="h-4 w-4 text-yellow-500" />
                 <span className="text-sm">
-                  <strong>{movie.imdbRating}</strong>/10 ({movie.imdbVotes} votes)
+                  <strong>{movie.imdbRating}</strong>/10 ({movie.imdbVotes}{" "}
+                  votes)
                 </span>
               </div>
 
@@ -93,6 +104,5 @@ export function MovieDetailsModal({ isOpen, onClose, movie }: MovieDetailsModalP
         </div>
       </DialogContent>
     </Dialog>
-  )
+  );
 }
-
