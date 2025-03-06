@@ -49,17 +49,6 @@
   }
 }
  
-/* Remove this problematic section */
-/* @layer base {
-  * {
-    @apply border-border;
-  }
-  body {
-    @apply bg-background text-foreground;
-  }
-} */
-
-/* Replace with this */
 @layer base {
   * {
     border-color: hsl(var(--border));
